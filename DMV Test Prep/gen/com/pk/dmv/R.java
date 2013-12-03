@@ -10,33 +10,68 @@ package com.pk.dmv;
 public final class R {
     public static final class attr {
     }
+    public static final class color {
+        public static final int transparent=0x7f040000;
+    }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
+        public static final int menu_card_bottom_margin=0x7f050004;
+        /**  Margins 
+         */
+        public static final int menu_card_horizontal_margin=0x7f050002;
+        public static final int menu_card_top_margin=0x7f050003;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int card_bg=0x7f020000;
+        public static final int card_bg_focused=0x7f020001;
+        public static final int card_bg_pressed=0x7f020002;
+        public static final int card_focused=0x7f020003;
+        public static final int card_pressed=0x7f020004;
+        public static final int card_selector=0x7f020005;
+        public static final int card_selector_transparent=0x7f020006;
+        public static final int ic_launcher=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f080000;
+        public static final int Card=0x7f080001;
+        public static final int ListView=0x7f080000;
+        public static final int imgIcon=0x7f080002;
+        public static final int txtDescription=0x7f080004;
+        public static final int txtTitle=0x7f080003;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
-    }
-    public static final class menu {
-        public static final int activity_main=0x7f070000;
+        public static final int activity_main_menu_item=0x7f030001;
     }
     public static final class string {
-        public static final int action_settings=0x7f050001;
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050002;
+        public static final int app_name=0x7f060000;
+        public static final int contribute=0x7f06000f;
+        public static final int contribute_description=0x7f060010;
+        public static final int find_local=0x7f06000d;
+        public static final int find_local_description=0x7f06000e;
+        public static final int flash_cards=0x7f060007;
+        public static final int flash_cards_description=0x7f060008;
+        public static final int handbook=0x7f06000b;
+        public static final int handbook_description=0x7f06000c;
+        /**  Sections Titles & Descriptions 
+         */
+        public static final int practice_test=0x7f060001;
+        public static final int practice_test_description=0x7f060002;
+        public static final int settings=0x7f060011;
+        public static final int settings_description=0x7f060012;
+        public static final int signs=0x7f060009;
+        public static final int signs_description=0x7f06000a;
+        public static final int test_history=0x7f060005;
+        public static final int test_history_description=0x7f060006;
+        public static final int test_overview=0x7f060003;
+        public static final int test_overview_description=0x7f060004;
     }
     public static final class style {
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f060000;
+        public static final int AppTheme=0x7f070000;
     }
 }
