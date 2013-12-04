@@ -11,14 +11,13 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
+        public static final int app_background=0x7f040002;
         public static final int transparent=0x7f040000;
+        public static final int white=0x7f040001;
     }
     public static final class dimen {
-        /**  Default screen margins, per the Android Design guidelines. 
-         */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
-        public static final int menu_card_bottom_margin=0x7f050004;
+        public static final int header_height=0x7f050000;
+        public static final int header_logo_size=0x7f050001;
         /**  Margins 
          */
         public static final int menu_card_horizontal_margin=0x7f050002;
@@ -32,18 +31,29 @@ public final class R {
         public static final int card_pressed=0x7f020004;
         public static final int card_selector=0x7f020005;
         public static final int card_selector_transparent=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
+        public static final int ic_header_logo=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int ic_transparent=0x7f020009;
+        public static final int picture0=0x7f02000a;
+        public static final int picture1=0x7f02000b;
     }
     public static final class id {
-        public static final int Card=0x7f080001;
+        public static final int Card=0x7f080004;
         public static final int ListView=0x7f080000;
-        public static final int imgIcon=0x7f080002;
-        public static final int txtDescription=0x7f080004;
-        public static final int txtTitle=0x7f080003;
+        public static final int header=0x7f080001;
+        public static final int header_logo=0x7f080003;
+        public static final int header_picture=0x7f080002;
+        public static final int image0=0x7f080008;
+        public static final int image1=0x7f080009;
+        public static final int imgIcon=0x7f080005;
+        public static final int txtDescription=0x7f080007;
+        public static final int txtTitle=0x7f080006;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int activity_main_menu_item=0x7f030001;
+        public static final int view_header_placeholder=0x7f030002;
+        public static final int view_kenburns=0x7f030003;
     }
     public static final class string {
         public static final int app_name=0x7f060000;
@@ -69,9 +79,12 @@ public final class R {
         public static final int test_overview_description=0x7f060004;
     }
     public static final class style {
+        public static final int ActionBarStyle_Transparent=0x7f070002;
+        public static final int ActionBarStyle_Transparent_TitleTextStyle=0x7f070003;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f070000;
+        public static final int TransparentTheme=0x7f070001;
     }
 }
