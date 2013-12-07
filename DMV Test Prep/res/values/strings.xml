@@ -3,6 +3,7 @@
 
     <string name="app_name">DMV Test Prep</string>
     <string name="invalid_selection">Invalid selection.</string>
+    <string name="action_info">Information</string>
 	
 	<!-- Sections Titles & Descriptions -->
     <string name="practice_test">Practice Test</string>

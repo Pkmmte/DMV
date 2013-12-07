@@ -11,6 +11,8 @@ import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.util.TypedValue;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AbsListView;
@@ -48,6 +50,7 @@ public class ActivityMain extends Activity {
 
     private AlphaForegroundColorSpan mAlphaForegroundColorSpan;
     private SpannableString mSpannableString;
+    private SpannableString mSpannableString2;
 
     private TypedValue mTypedValue = new TypedValue();
 	
@@ -64,9 +67,32 @@ public class ActivityMain extends Activity {
 		initViews();
 		mActionBarTitleColor = getResources().getColor(R.color.white);
 	    mSpannableString = new SpannableString(getString(R.string.app_name));
+	    mSpannableString2 = new SpannableString("California");
 	    mAlphaForegroundColorSpan = new AlphaForegroundColorSpan(mActionBarTitleColor);
 	    setupActionBar();
 		initMenu();
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu)
+	{
+		getMenuInflater().inflate(R.menu.activity_main, menu);
+		
+		return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item)
+	{
+		switch (item.getItemId())
+		{
+			case R.id.action_info:
+				// TODO Open information dialog
+				Toast.makeText(this, "Information stuff goes here.", Toast.LENGTH_SHORT).show();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
+		}
 	}
 	
 	private void initViews() {
@@ -174,7 +200,9 @@ public class ActivityMain extends Activity {
     private void setTitleAlpha(float alpha) {
         mAlphaForegroundColorSpan.setAlpha(alpha);
         mSpannableString.setSpan(mAlphaForegroundColorSpan, 0, mSpannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+        mSpannableString2.setSpan(mAlphaForegroundColorSpan, 0, mSpannableString2.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         getActionBar().setTitle(mSpannableString);
+        getActionBar().setSubtitle(mSpannableString2);
     }
 
     public static float clamp(float value, float max, float min) {

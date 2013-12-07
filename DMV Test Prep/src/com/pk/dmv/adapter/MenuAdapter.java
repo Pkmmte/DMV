@@ -77,54 +77,63 @@ public class MenuAdapter extends BaseAdapter
 				holder.txtDescription.setText(res.getString(R.string.practice_test_description));
 				holder.imgIcon.setImageResource(R.drawable.ic_practice_test);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_blue_light));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_blue_light_transparent));
 				break;
 			case TEST_OVERVIEW:
 				holder.txtTitle.setText(res.getString(R.string.test_overview));
 				holder.txtDescription.setText(res.getString(R.string.test_overview_description));
 				holder.imgIcon.setImageResource(R.drawable.ic_test_overview);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_purple_light));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_purple_light_transparent));
 				break;
 			case TEST_HISTORY:
 				holder.txtTitle.setText(res.getString(R.string.test_history));
 				holder.txtDescription.setText(res.getString(R.string.test_history_description));
 				holder.imgIcon.setImageResource(R.drawable.ic_test_history);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.pk_black));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_black_transparent));
 				break;
 			case FLASH_CARDS:
 				holder.txtTitle.setText(res.getString(R.string.flash_cards));
 				holder.txtDescription.setText(res.getString(R.string.flash_cards_description));
-				holder.imgIcon.setImageResource(R.drawable.ic_launcher);
+				holder.imgIcon.setImageResource(R.drawable.ic_flash_cards);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_orange_dark));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_orange_dark_transparent));
 				break;
 			case SIGNS:
 				holder.txtTitle.setText(res.getString(R.string.signs));
 				holder.txtDescription.setText(res.getString(R.string.signs_description));
-				holder.imgIcon.setImageResource(R.drawable.ic_launcher);
+				holder.imgIcon.setImageResource(R.drawable.ic_signs);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_red_dark));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_red_dark_transparent));
 				break;
 			case HANDBOOK:
 				holder.txtTitle.setText(res.getString(R.string.handbook));
 				holder.txtDescription.setText(res.getString(R.string.handbook_description));
 				holder.imgIcon.setImageResource(R.drawable.ic_handbook);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_green_light));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_green_dark_transparent));
 				break;
 			case FIND_LOCAL:
 				holder.txtTitle.setText(res.getString(R.string.find_local));
 				holder.txtDescription.setText(res.getString(R.string.find_local_description));
-				holder.imgIcon.setImageResource(R.drawable.ic_launcher);
+				holder.imgIcon.setImageResource(R.drawable.ic_find_local);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_purple));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_purple_transparent));
 				break;
 			case CONTRIBUTE:
 				holder.txtTitle.setText(res.getString(R.string.contribute));
 				holder.txtDescription.setText(res.getString(R.string.contribute_description));
-				holder.imgIcon.setImageResource(R.drawable.ic_launcher);
+				holder.imgIcon.setImageResource(R.drawable.ic_contribute);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.holo_blue_dark));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_blue_dark_transparent));
 				break;
 			case SETTINGS:
 				holder.txtTitle.setText(res.getString(R.string.settings));
 				holder.txtDescription.setText(res.getString(R.string.settings_description));
 				holder.imgIcon.setImageResource(R.drawable.ic_settings);
 				holder.viewColor.setBackgroundColor(res.getColor(R.color.pk_black));
+				holder.Card.setForeground(res.getDrawable(R.drawable.card_selector_black_transparent));
 				break;
 		}
 		

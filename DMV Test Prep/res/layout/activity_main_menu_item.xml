@@ -14,7 +14,7 @@
         android:layout_marginTop="@dimen/menu_card_top_margin"
         android:background="@drawable/card_bg"
         android:clickable="true"
-        android:foreground="@drawable/card_selector_transparent" >
+        android:foreground="@drawable/card_selector_blue_light_transparent" >
 
         <LinearLayout
             android:layout_width="match_parent"

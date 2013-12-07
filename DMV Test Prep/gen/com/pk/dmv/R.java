@@ -58,35 +58,62 @@ public final class R {
         public static final int card_bg=0x7f020000;
         public static final int card_bg_focused=0x7f020001;
         public static final int card_bg_pressed=0x7f020002;
-        public static final int card_focused=0x7f020003;
-        public static final int card_pressed=0x7f020004;
-        public static final int card_selector=0x7f020005;
-        public static final int card_selector_transparent=0x7f020006;
-        public static final int ic_handbook=0x7f020007;
-        public static final int ic_header_logo=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int ic_practice_test=0x7f02000a;
-        public static final int ic_settings=0x7f02000b;
-        public static final int ic_test_history=0x7f02000c;
-        public static final int ic_test_overview=0x7f02000d;
-        public static final int ic_transparent=0x7f02000e;
-        public static final int pic0=0x7f02000f;
-        public static final int pic1=0x7f020010;
-        public static final int pic2=0x7f020011;
+        public static final int card_black_focused=0x7f020003;
+        public static final int card_black_pressed=0x7f020004;
+        public static final int card_blue_dark_focused=0x7f020005;
+        public static final int card_blue_dark_pressed=0x7f020006;
+        public static final int card_focused=0x7f020007;
+        public static final int card_green_dark_focused=0x7f020008;
+        public static final int card_green_dark_pressed=0x7f020009;
+        public static final int card_orange_dark_focused=0x7f02000a;
+        public static final int card_orange_dark_pressed=0x7f02000b;
+        public static final int card_pressed=0x7f02000c;
+        public static final int card_purple_focused=0x7f02000d;
+        public static final int card_purple_light_focused=0x7f02000e;
+        public static final int card_purple_light_pressed=0x7f02000f;
+        public static final int card_purple_pressed=0x7f020010;
+        public static final int card_red_dark_focused=0x7f020011;
+        public static final int card_red_dark_pressed=0x7f020012;
+        public static final int card_selector_black_transparent=0x7f020013;
+        public static final int card_selector_blue_dark_transparent=0x7f020014;
+        public static final int card_selector_blue_light=0x7f020015;
+        public static final int card_selector_blue_light_transparent=0x7f020016;
+        public static final int card_selector_green_dark_transparent=0x7f020017;
+        public static final int card_selector_orange_dark_transparent=0x7f020018;
+        public static final int card_selector_purple_light_transparent=0x7f020019;
+        public static final int card_selector_purple_transparent=0x7f02001a;
+        public static final int card_selector_red_dark_transparent=0x7f02001b;
+        public static final int ic_action_info=0x7f02001c;
+        public static final int ic_contribute=0x7f02001d;
+        public static final int ic_find_local=0x7f02001e;
+        public static final int ic_flash_cards=0x7f02001f;
+        public static final int ic_handbook=0x7f020020;
+        public static final int ic_header_logo=0x7f020021;
+        public static final int ic_launcher=0x7f020022;
+        public static final int ic_practice_test=0x7f020023;
+        public static final int ic_settings=0x7f020024;
+        public static final int ic_signs=0x7f020025;
+        public static final int ic_test_history=0x7f020026;
+        public static final int ic_test_overview=0x7f020027;
+        public static final int ic_transparent=0x7f020028;
+        public static final int pic0=0x7f020029;
+        public static final int pic1=0x7f02002a;
+        public static final int pic2=0x7f02002b;
     }
     public static final class id {
-        public static final int Card=0x7f090004;
-        public static final int ListView=0x7f090000;
-        public static final int header=0x7f090001;
-        public static final int header_logo=0x7f090003;
-        public static final int header_picture=0x7f090002;
-        public static final int image0=0x7f090009;
-        public static final int image1=0x7f09000a;
-        public static final int image2=0x7f09000b;
-        public static final int imgIcon=0x7f090005;
-        public static final int txtDescription=0x7f090007;
-        public static final int txtTitle=0x7f090006;
-        public static final int viewColor=0x7f090008;
+        public static final int Card=0x7f0a0004;
+        public static final int ListView=0x7f0a0000;
+        public static final int action_info=0x7f0a000c;
+        public static final int header=0x7f0a0001;
+        public static final int header_logo=0x7f0a0003;
+        public static final int header_picture=0x7f0a0002;
+        public static final int image0=0x7f0a0009;
+        public static final int image1=0x7f0a000a;
+        public static final int image2=0x7f0a000b;
+        public static final int imgIcon=0x7f0a0005;
+        public static final int txtDescription=0x7f0a0007;
+        public static final int txtTitle=0x7f0a0006;
+        public static final int viewColor=0x7f0a0008;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -94,29 +121,33 @@ public final class R {
         public static final int view_header_placeholder=0x7f030002;
         public static final int view_kenburns=0x7f030003;
     }
+    public static final class menu {
+        public static final int activity_main=0x7f090000;
+    }
     public static final class string {
+        public static final int action_info=0x7f070002;
         public static final int app_name=0x7f070000;
-        public static final int contribute=0x7f070010;
-        public static final int contribute_description=0x7f070011;
-        public static final int find_local=0x7f07000e;
-        public static final int find_local_description=0x7f07000f;
-        public static final int flash_cards=0x7f070008;
-        public static final int flash_cards_description=0x7f070009;
-        public static final int handbook=0x7f07000c;
-        public static final int handbook_description=0x7f07000d;
+        public static final int contribute=0x7f070011;
+        public static final int contribute_description=0x7f070012;
+        public static final int find_local=0x7f07000f;
+        public static final int find_local_description=0x7f070010;
+        public static final int flash_cards=0x7f070009;
+        public static final int flash_cards_description=0x7f07000a;
+        public static final int handbook=0x7f07000d;
+        public static final int handbook_description=0x7f07000e;
         public static final int invalid_selection=0x7f070001;
         /**  Sections Titles & Descriptions 
          */
-        public static final int practice_test=0x7f070002;
-        public static final int practice_test_description=0x7f070003;
-        public static final int settings=0x7f070012;
-        public static final int settings_description=0x7f070013;
-        public static final int signs=0x7f07000a;
-        public static final int signs_description=0x7f07000b;
-        public static final int test_history=0x7f070006;
-        public static final int test_history_description=0x7f070007;
-        public static final int test_overview=0x7f070004;
-        public static final int test_overview_description=0x7f070005;
+        public static final int practice_test=0x7f070003;
+        public static final int practice_test_description=0x7f070004;
+        public static final int settings=0x7f070013;
+        public static final int settings_description=0x7f070014;
+        public static final int signs=0x7f07000b;
+        public static final int signs_description=0x7f07000c;
+        public static final int test_history=0x7f070007;
+        public static final int test_history_description=0x7f070008;
+        public static final int test_overview=0x7f070005;
+        public static final int test_overview_description=0x7f070006;
     }
     public static final class style {
         public static final int ActionBarStyle_Transparent=0x7f080002;
