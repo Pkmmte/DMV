@@ -5,6 +5,7 @@ import java.util.List;
 
 import android.app.ActionBar;
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.RectF;
 import android.os.Bundle;
 import android.text.Spannable;
@@ -15,29 +16,33 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AbsListView;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.pk.dmv.R;
 import com.pk.dmv.adapter.MenuAdapter;
+import com.pk.dmv.adapter.MenuAdapter.OnItemClickListener;
 import com.pk.dmv.util.AlphaForegroundColorSpan;
 import com.pk.dmv.view.KenBurnsView;
 
 public class ActivityMain extends Activity {
     
+	// Menu list
+	private ListView mList;
+	private List<Integer> mItems;
+	private MenuAdapter mAdapter;
+	
+	// Fancy action bar variables and whatnot
     private int mActionBarTitleColor;
     private int mActionBarHeight;
     private int mHeaderHeight;
     private int mMinHeaderTranslation;
-	
-	private ListView mList;
-	private List<Integer> mItems;
-	private MenuAdapter mAdapter;
 	
 	private KenBurnsView mHeaderPicture;
     private ImageView mHeaderLogo;
     private View mHeader;
     private View mPlaceHolderView;
     private AccelerateDecelerateInterpolator mSmoothInterpolator;
-
+    
     private RectF mRect1 = new RectF();
     private RectF mRect2 = new RectF();
 
@@ -68,7 +73,7 @@ public class ActivityMain extends Activity {
 		mList = (ListView) findViewById(R.id.ListView);
         mHeader = findViewById(R.id.header);
         mHeaderPicture = (KenBurnsView) findViewById(R.id.header_picture);
-        mHeaderPicture.setResourceIds(R.drawable.picture0, R.drawable.picture1);
+        mHeaderPicture.setResourceIds(R.drawable.pic0, R.drawable.pic1, R.drawable.pic2);
         mHeaderLogo = (ImageView) findViewById(R.id.header_logo);
 	}
 	
@@ -85,10 +90,12 @@ public class ActivityMain extends Activity {
 		mItems.add(MenuAdapter.CONTRIBUTE);
 		mItems.add(MenuAdapter.SETTINGS);
 		
-		mAdapter = new MenuAdapter(this, mItems);
+		mAdapter = new MenuAdapter(this, mItems, getMenuListener());
 		mPlaceHolderView = getLayoutInflater().inflate(R.layout.view_header_placeholder, mList, false);
         mList.addHeaderView(mPlaceHolderView);
 		mList.setAdapter(mAdapter);
+		
+		// Listeners
         mList.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
@@ -97,9 +104,9 @@ public class ActivityMain extends Activity {
             @Override
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
                 int scrollY = getScrollY();
-                //sticky actionbar
+                // Sticky actionbar
                 mHeader.setTranslationY(Math.max(-scrollY, mMinHeaderTranslation));
-                //header_logo --> actionbar icon
+                // Header_logo --> actionbar icon
                 float ratio = clamp(mHeader.getTranslationY() / mMinHeaderTranslation, 0.0f, 1.0f);
                 interpolate(mHeaderLogo, getActionBarIconView(), mSmoothInterpolator.getInterpolation(ratio));
                 setTitleAlpha(clamp(5.0F * ratio - 4.0F, 0.0F, 1.0F));
@@ -107,6 +114,63 @@ public class ActivityMain extends Activity {
         });
 	}
 	
+	private OnItemClickListener getMenuListener()
+	{
+		return new OnItemClickListener()
+		{
+			@Override
+			public void onItemClick(int position, View view)
+			{
+				Intent intent = null;
+				switch(position)
+				{
+					case MenuAdapter.PRACTICE_TEST:
+						intent = new Intent(ActivityMain.this, ActivityPracticeTest.class);
+						break;
+					case MenuAdapter.TEST_OVERVIEW:
+						intent = new Intent(ActivityMain.this, ActivityTestOverview.class);
+						break;
+					case MenuAdapter.TEST_HISTORY:
+						intent = new Intent(ActivityMain.this, ActivityTestHistory.class);
+						break;
+					case MenuAdapter.FLASH_CARDS:
+						intent = new Intent(ActivityMain.this, ActivityFlashCards.class);
+						break;
+					case MenuAdapter.SIGNS:
+						intent = new Intent(ActivityMain.this, ActivitySigns.class);
+						break;
+					case MenuAdapter.HANDBOOK:
+						intent = new Intent(ActivityMain.this, ActivityHandbook.class);
+						break;
+					case MenuAdapter.FIND_LOCAL:
+						intent = new Intent(ActivityMain.this, ActivityFindLocal.class);
+						break;
+					case MenuAdapter.CONTRIBUTE:
+						intent = new Intent(ActivityMain.this, ActivityContribute.class);
+						break;
+					case MenuAdapter.SETTINGS:
+						intent = new Intent(ActivityMain.this, ActivitySettings.class);
+						break;
+					default:
+						Toast.makeText(ActivityMain.this, getResources().getString(R.string.invalid_selection), Toast.LENGTH_LONG).show();
+						break;
+				}
+				
+				if(intent != null) {
+					startActivity(intent);
+					overridePendingTransition(R.anim.fslide_right_in, R.anim.fslide_left_out);
+				}
+			}
+
+			@Override
+			public boolean onItemLongClick(int position, View view) 
+			{
+				return false;
+			}
+		};
+	}
+	
+	/** Everything below this is for the fancy action bar. **/
     private void setTitleAlpha(float alpha) {
         mAlphaForegroundColorSpan.setAlpha(alpha);
         mSpannableString.setSpan(mAlphaForegroundColorSpan, 0, mSpannableString.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);

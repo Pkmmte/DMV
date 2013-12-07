@@ -130,9 +130,10 @@ public class KenBurnsView extends FrameLayout {
         super.onFinishInflate();
         View view = inflate(getContext(), R.layout.view_kenburns, this);
 
-        mImageViews = new ImageView[2];
+        mImageViews = new ImageView[3];
         mImageViews[0] = (ImageView) view.findViewById(R.id.image0);
         mImageViews[1] = (ImageView) view.findViewById(R.id.image1);
+        mImageViews[2] = (ImageView) view.findViewById(R.id.image2);
     }
 
     private void fillImageViews() {

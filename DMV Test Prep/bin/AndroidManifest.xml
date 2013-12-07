@@ -23,6 +23,42 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.pk.dmv.activity.ActivityPracticeTest"
+            android:label="@string/practice_test"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivityTestOverview"
+            android:label="@string/test_overview"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivityTestHistory"
+            android:label="@string/test_history"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivityFlashCards"
+            android:label="@string/flash_cards"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivitySigns"
+            android:label="@string/signs"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivityHandbook"
+            android:label="@string/handbook"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivityFindLocal"
+            android:label="@string/find_local"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivityContribute"
+            android:label="@string/contribute"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.pk.dmv.activity.ActivitySettings"
+            android:label="@string/settings"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

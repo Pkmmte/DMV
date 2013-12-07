@@ -2,26 +2,27 @@
 <resources>
 
     <string name="app_name">DMV Test Prep</string>
+    <string name="invalid_selection">Invalid selection.</string>
 	
 	<!-- Sections Titles & Descriptions -->
     <string name="practice_test">Practice Test</string>
-    <string name="practice_test_description">Blah blah</string>
+    <string name="practice_test_description">Test your knowledge with this customizable practice test.</string>
     <string name="test_overview">Test Overview</string>
-    <string name="test_overview_description">Blah blah</string>
+    <string name="test_overview_description">Go over all test answers in a nice organized way. Similar to a cheat sheet.</string>
     <string name="test_history">Test History</string>
-    <string name="test_history_description">Blah blah</string>
+    <string name="test_history_description">Review your previous attempts and see how much you\'ve improved.</string>
     <string name="flash_cards">Flash Cards</string>
-    <string name="flash_cards_description">Blah blah</string>
+    <string name="flash_cards_description">Simple flash cards for efficient studying, if that\'s your style.</string>
     <string name="signs">Signs</string>
-    <string name="signs_description">Blah blah</string>
+    <string name="signs_description">Quick and simple way to go over street signs. This is for signs only.</string>
     <string name="handbook">Handbook</string>
-    <string name="handbook_description">Blah blah</string>
+    <string name="handbook_description">Official DMV handbook available for download in PDF format.</string>
     <string name="find_local">Find Local Office</string>
-    <string name="find_local_description">Blah blah</string>
+    <string name="find_local_description">Find your local DMV office and schedule an appointment.</string>
     <string name="contribute">Contribute</string>
-    <string name="contribute_description">Blah blah</string>
+    <string name="contribute_description">Help make this app better by adding on to it and/or making sure it\'s up-to-date.</string>
     <string name="settings">Settings</string>
-    <string name="settings_description">Blah blah</string>
+    <string name="settings_description">Change the way this app is presented to you for a more pleasurable experience.</string>
     
 
 </resources>
