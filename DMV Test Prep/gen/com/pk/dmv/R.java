@@ -11,9 +11,27 @@ public final class R {
     public static final class attr {
     }
     public static final class color {
-        public static final int app_background=0x7f040002;
-        public static final int transparent=0x7f040000;
-        public static final int white=0x7f040001;
+        public static final int app_background=0x7f040014;
+        public static final int black=0x7f040012;
+        public static final int black_trans=0x7f040013;
+        public static final int holo_blue_bright=0x7f040000;
+        public static final int holo_blue_dark=0x7f040004;
+        public static final int holo_blue_darker=0x7f040005;
+        public static final int holo_blue_light=0x7f040001;
+        public static final int holo_blue_light_transparent=0x7f040002;
+        public static final int holo_blue_light_transparent2=0x7f040003;
+        public static final int holo_green_cool=0x7f040008;
+        public static final int holo_green_dark=0x7f040007;
+        public static final int holo_green_light=0x7f040006;
+        public static final int holo_orange_dark=0x7f04000f;
+        public static final int holo_orange_light=0x7f04000e;
+        public static final int holo_purple=0x7f04000b;
+        public static final int holo_purple_dark=0x7f04000d;
+        public static final int holo_purple_light=0x7f04000c;
+        public static final int holo_red_dark=0x7f04000a;
+        public static final int holo_red_light=0x7f040009;
+        public static final int transparent=0x7f040010;
+        public static final int white=0x7f040011;
     }
     public static final class dimen {
         public static final int header_height=0x7f050000;

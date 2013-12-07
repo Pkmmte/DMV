@@ -22,7 +22,7 @@ import com.pk.dmv.util.AlphaForegroundColorSpan;
 import com.pk.dmv.view.KenBurnsView;
 
 public class ActivityMain extends Activity {
-	
+    
     private int mActionBarTitleColor;
     private int mActionBarHeight;
     private int mHeaderHeight;
@@ -102,10 +102,6 @@ public class ActivityMain extends Activity {
                 //header_logo --> actionbar icon
                 float ratio = clamp(mHeader.getTranslationY() / mMinHeaderTranslation, 0.0f, 1.0f);
                 interpolate(mHeaderLogo, getActionBarIconView(), mSmoothInterpolator.getInterpolation(ratio));
-                //actionbar title alpha
-                //getActionBarTitleView().setAlpha(clamp(5.0F * ratio - 4.0F, 0.0F, 1.0F));
-                //---------------------------------
-                //better way thanks to @cyrilmottier
                 setTitleAlpha(clamp(5.0F * ratio - 4.0F, 0.0F, 1.0F));
             }
         });
@@ -161,18 +157,11 @@ public class ActivityMain extends Activity {
     private void setupActionBar() {
         ActionBar actionBar = getActionBar();
         actionBar.setIcon(R.drawable.ic_transparent);
-
-        //getActionBarTitleView().setAlpha(0f);
     }
 
     private ImageView getActionBarIconView() {
         return (ImageView) findViewById(android.R.id.home);
     }
-
-    /*private TextView getActionBarTitleView() {
-        int id = Resources.getSystem().getIdentifier("action_bar_title", "id", "android");
-        return (TextView) findViewById(id);
-    }*/
 
     public int getActionBarHeight() {
         if (mActionBarHeight != 0) {
