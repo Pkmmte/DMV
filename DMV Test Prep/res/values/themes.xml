@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default Theme -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar" />
+
+    <!-- Main Menu Theme -->
+    <style name="TransparentTheme" parent="android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Transparent</item>
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+
+    <!-- Practice Test Theme -->
+    <style name="BlueLightTheme" parent="android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_previous</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.BlueLight</item>
+        <item name="android:actionBarItemBackground">@drawable/selector_blue_light_background</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBarStyle.Overflow</item>
+        <item name="android:actionBarWidgetTheme">@style/ActionBarStyle.WidgetTheme</item>
+    </style>
+
+</resources>

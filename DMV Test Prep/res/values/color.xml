@@ -27,6 +27,7 @@
     <color name="black">#ff000000</color>
     <color name="black_trans">#88000000</color>
     <color name="app_background">#ffe5e5e5</color>
+    <color name="ab_menu_divider">#ffd7d7d7</color>
     <color name="pk_black">#ff323232</color>
 
 </resources>
