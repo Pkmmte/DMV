@@ -104,6 +104,7 @@ public final class R {
         public static final int pic1=0x7f02002d;
         public static final int pic2=0x7f02002e;
         public static final int selector_blue_light_background=0x7f02002f;
+        public static final int selector_purple_light_background=0x7f020030;
     }
     public static final class id {
         public static final int Card=0x7f0a0004;
@@ -157,25 +158,29 @@ public final class R {
     }
     public static final class style {
         public static final int ActionBarStyle_BlueLight=0x7f080001;
-        public static final int ActionBarStyle_DropDownListView=0x7f080007;
-        public static final int ActionBarStyle_Overflow=0x7f080004;
-        public static final int ActionBarStyle_PopupMenu=0x7f080006;
-        public static final int ActionBarStyle_SubTitleTextStyle=0x7f080003;
+        public static final int ActionBarStyle_DropDownListView=0x7f080008;
+        public static final int ActionBarStyle_Overflow=0x7f080005;
+        public static final int ActionBarStyle_PopupMenu=0x7f080007;
+        public static final int ActionBarStyle_PurpleLight=0x7f080002;
+        public static final int ActionBarStyle_SubTitleTextStyle=0x7f080004;
         /**  Generic Stuff 
          */
-        public static final int ActionBarStyle_TitleTextStyle=0x7f080002;
+        public static final int ActionBarStyle_TitleTextStyle=0x7f080003;
         /**  ActionBar Themes 
          */
         public static final int ActionBarStyle_Transparent=0x7f080000;
-        public static final int ActionBarStyle_WidgetTheme=0x7f080005;
+        public static final int ActionBarStyle_WidgetTheme=0x7f080006;
         /**  Default Theme 
          */
-        public static final int AppTheme=0x7f080008;
+        public static final int AppTheme=0x7f080009;
         /**  Practice Test Theme 
          */
-        public static final int BlueLightTheme=0x7f08000a;
+        public static final int BlueLightTheme=0x7f08000b;
+        /**  Test Overview Theme 
+         */
+        public static final int PurpleLightTheme=0x7f08000c;
         /**  Main Menu Theme 
          */
-        public static final int TransparentTheme=0x7f080009;
+        public static final int TransparentTheme=0x7f08000a;
     }
 }

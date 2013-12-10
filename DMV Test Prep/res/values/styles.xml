@@ -10,6 +10,15 @@
     
     <style name="ActionBarStyle.BlueLight" parent="@android:style/Widget.Holo.Light.ActionBar">
         <item name="android:background">@color/holo_blue_light</item>
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:subtitleTextStyle">@style/ActionBarStyle.SubTitleTextStyle</item>
+        <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
+        <item name="android:dropDownListViewStyle">@style/ActionBarStyle.DropDownListView</item>
+    </style>
+    
+    <style name="ActionBarStyle.PurpleLight" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/holo_purple_light</item>
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
         <item name="android:subtitleTextStyle">@style/ActionBarStyle.SubTitleTextStyle</item>
         <item name="android:titleTextStyle">@style/ActionBarStyle.TitleTextStyle</item>
         <item name="android:dropDownListViewStyle">@style/ActionBarStyle.DropDownListView</item>

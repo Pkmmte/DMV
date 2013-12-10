@@ -20,4 +20,13 @@
         <item name="android:actionBarWidgetTheme">@style/ActionBarStyle.WidgetTheme</item>
     </style>
 
+    <!-- Test Overview Theme -->
+    <style name="PurpleLightTheme" parent="android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_previous</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.PurpleLight</item>
+        <item name="android:actionBarItemBackground">@drawable/selector_purple_light_background</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBarStyle.Overflow</item>
+        <item name="android:actionBarWidgetTheme">@style/ActionBarStyle.WidgetTheme</item>
+    </style>
+
 </resources>
